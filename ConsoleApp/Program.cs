@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -46,10 +47,10 @@ namespace ConsoleApp
             Console.WriteLine($"Randomly chosen symbol: '{symbol}'");
 
             Console.WriteLine("To be continued...");
-            // foreach (var VARIABLE in dict2.GetEnumeratorStartingWith(symbol))
-            // {
-            //     
-            // }
+            foreach (var pair in (IEnumerable) dict2.GetEnumeratorStartingWith(symbol))
+            {
+                Console.WriteLine(pair);
+            }
         }
 
         public static bool IsValidWord(string word, bool russian = false)
