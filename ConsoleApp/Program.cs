@@ -25,8 +25,11 @@ namespace ConsoleApp
 
             Dictionary dict = new Dictionary();
             foreach (var pair in from line in File.ReadLines(path) select line.Split())
-            {
-                dict.Add(pair[0], pair[1]);
+            { 
+                if (dict.locale == 0)
+                    dict.Add(pair[0], pair[1]);
+                else
+                    dict.Add(pair[1], pair[0]);
             }
 
             const string binPath = "./out.bin";
