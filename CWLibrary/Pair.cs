@@ -2,6 +2,7 @@
 
 namespace CWLibrary
 {
+    [Serializable]
     public class Pair<T, U> : IComparable, ICloneable
     {
         public T item1;

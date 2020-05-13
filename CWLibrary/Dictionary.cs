@@ -82,6 +82,7 @@ namespace CWLibrary
             
             BinaryFormatter formatter = new BinaryFormatter();
             formatter.Serialize(fs, this);
+            fs.Close();
         }
 
         public static Dictionary MyDeserialize(string path)
@@ -89,7 +90,9 @@ namespace CWLibrary
             FileStream fs = new FileStream(path, FileMode.Open);
             
             BinaryFormatter formatter = new BinaryFormatter();
-            return (Dictionary)formatter.Deserialize(fs);
+            var thing = (Dictionary)formatter.Deserialize(fs);
+            fs.Close();
+            return thing;
         }
     }
 }

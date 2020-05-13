@@ -12,11 +12,15 @@ namespace ConsoleApp
         {
             string path = "dictionary.txt";
             int n = GetNumber("Enter the number of words N");
-            File.Create(path);
+            FileStream fs = File.Create(path);
+            TextWriter writer = new StreamWriter(fs);
             for (int i = 0; i < n; i++)
             {
-                File.AppendText(GetPair());
+                writer.WriteLine(GetPair());
             }
+
+            writer.Close();
+            fs.Close();
 
             Dictionary dict = new Dictionary();
             foreach (var pair in from line in File.ReadLines(path) select line.Split())
