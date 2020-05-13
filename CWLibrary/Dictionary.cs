@@ -71,7 +71,7 @@ namespace CWLibrary
         {
             var sorted = new List<Pair<string, string>>(
                 from word in words
-                where (locale == 0 ? word.item1 : word.item2)[0] == ch
+                where Char.ToLower(word.item1[0]) == Char.ToLower(ch)
                 select word);
             return GenericEnum(sorted);
         }

@@ -4,6 +4,6 @@ namespace CWLibrary
 {
     public static class Utils
     {
-        internal static Random Random = new Random(DateTime.Now.Millisecond);
+        public static Random Random = new Random(DateTime.Now.Millisecond);
     }
 }
