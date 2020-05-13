@@ -4,11 +4,11 @@
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{9E28907D-1A1D-429D-BF2E-455C4B4AD730}</ProjectGuid>
-        <OutputType>Exe</OutputType>
+        <ProjectGuid>{FED75DCD-F8FA-451D-BE3E-2578748E2D09}</ProjectGuid>
+        <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>ConsoleApp</RootNamespace>
-        <AssemblyName>ConsoleApp</AssemblyName>
+        <RootNamespace>CWLibrary</RootNamespace>
+        <AssemblyName>CWLibrary</AssemblyName>
         <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
     </PropertyGroup>
@@ -38,14 +38,10 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Program.cs" />
+        <Compile Include="Dictionary.cs" />
+        <Compile Include="Pair.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
-    </ItemGroup>
-    <ItemGroup>
-      <ProjectReference Include="..\CWLibrary\CWLibrary.csproj">
-        <Project>{fed75dcd-f8fa-451d-be3e-2578748e2d09}</Project>
-        <Name>CWLibrary</Name>
-      </ProjectReference>
+        <Compile Include="Utils.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

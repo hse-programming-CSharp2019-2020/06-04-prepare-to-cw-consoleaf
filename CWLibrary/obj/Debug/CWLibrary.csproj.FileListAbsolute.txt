@@ -1,0 +1,6 @@
+/home/takanashi/.home/University/prepareforcw/CWLibrary/obj/Debug/CWLibrary.csproj.CoreCompileInputs.cache
+/home/takanashi/.home/University/prepareforcw/CWLibrary/bin/Debug/CWLibrary.dll
+/home/takanashi/.home/University/prepareforcw/CWLibrary/bin/Debug/CWLibrary.pdb
+/home/takanashi/.home/University/prepareforcw/CWLibrary/obj/Debug/CWLibrary.csprojAssemblyReference.cache
+/home/takanashi/.home/University/prepareforcw/CWLibrary/obj/Debug/CWLibrary.dll
+/home/takanashi/.home/University/prepareforcw/CWLibrary/obj/Debug/CWLibrary.pdb

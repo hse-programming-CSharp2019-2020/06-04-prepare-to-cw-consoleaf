@@ -1,0 +1,6 @@
+/home/takanashi/.home/University/prepareforcw/ConsoleApp/bin/Debug/ConsoleApp.exe
+/home/takanashi/.home/University/prepareforcw/ConsoleApp/bin/Debug/ConsoleApp.pdb
+/home/takanashi/.home/University/prepareforcw/ConsoleApp/obj/Debug/ConsoleApp.csprojAssemblyReference.cache
+/home/takanashi/.home/University/prepareforcw/ConsoleApp/obj/Debug/ConsoleApp.csproj.CoreCompileInputs.cache
+/home/takanashi/.home/University/prepareforcw/ConsoleApp/obj/Debug/ConsoleApp.exe
+/home/takanashi/.home/University/prepareforcw/ConsoleApp/obj/Debug/ConsoleApp.pdb
