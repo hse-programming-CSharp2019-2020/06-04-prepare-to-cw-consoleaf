@@ -20,7 +20,7 @@ namespace CWLibrary
 
         public override string ToString()
         {
-            return $"Pair<{typeof(T)}, {typeof(U)}>({item1}, {item2})";
+            return $"{item1} {item2}";
         }
 
         public object Clone()
