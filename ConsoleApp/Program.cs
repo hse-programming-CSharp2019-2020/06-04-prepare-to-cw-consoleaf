@@ -104,7 +104,7 @@ namespace ConsoleApp
                 Console.Write($"{prompt}: ");
                 s = Console.ReadLine();
                 failed = true;
-            } while (!int.TryParse(s, out n));
+            } while (!int.TryParse(s, out n) || n <= 0);
 
             return n;
         }
